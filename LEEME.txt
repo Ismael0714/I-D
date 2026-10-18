@@ -1,0 +1,45 @@
+PÁGINA "PARA MI AMOR" — CÓMO COMPLETARLA
+==========================================
+
+Contenido de la carpeta
+-----------------------
+index.html            -> la página (ábrela con el navegador)
+musica/cold-heart.mp3 -> la canción, ya conectada al botón "Toca para descubrir"
+fotos/                -> aquí van tus fotos
+
+1) FOTOS
+--------
+Pon tus fotos dentro de la carpeta "fotos" con EXACTAMENTE estos nombres
+(en minúscula y terminando en .jpg):
+
+  Carrusel "Nuestros Momentos":  foto1.jpg  foto2.jpg  foto3.jpg  foto4.jpg
+  Sección "Nuestra Historia":    historia1.jpg  historia2.jpg
+  Sección final "Para Siempre":  final.jpg
+
+Si una foto no está, la página muestra un recuadro de ejemplo en su lugar.
+Si tu foto es .png o .jpeg, cámbiale el nombre o el texto en index.html.
+
+¿Más o menos fotos en el carrusel?
+Abre index.html con un editor de texto (Bloc de notas, VS Code...) y busca
+"const PHOTOS". Agrega o borra líneas como esta:
+  {src:"fotos/foto5.jpg", cap:"Texto debajo de la foto"},
+
+2) TEXTOS
+---------
+Abre index.html con un editor de texto y busca:
+  - "Mi Dedicatoria"  -> cambia los párrafos de la carta.
+  - "Nuestra Historia" -> cada bloque <div class="event"> es un momento:
+                          cambia la fecha (class="date"), el título (<h3>)
+                          y el texto (<p>). Copia un bloque para agregar otro.
+  - "Para Siempre"    -> el mensaje final.
+
+3) FECHA DEL CONTADOR
+---------------------
+Ya está puesta: 17 de agosto de 2026. Si quieres cambiarla, busca
+"const START" (ojo: el mes empieza en 0, así que agosto = 7).
+
+4) PUBLICARLA PARA ENVIÁRSELA
+-----------------------------
+Mantén la carpeta completa junta (index.html + musica + fotos).
+Opciones gratuitas: Netlify Drop (arrastras la carpeta y te da un enlace),
+GitHub Pages o Vercel. Luego le mandas el enlace a tu novia.
